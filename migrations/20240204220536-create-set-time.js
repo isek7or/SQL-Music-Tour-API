@@ -11,29 +11,27 @@ module.exports = {
       },
       event_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       },
       stage_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: false
       },
       band_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       },
       start_time: {
         type: Sequelize.DATE,
-        allowNull: false,
+        allowNull: false
       },
       end_time: {
         type: Sequelize.DATE,
-        allowNull: false,
+        allowNull: false
       }
-    });
+    })
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('set_Times');
   }
-};
+}

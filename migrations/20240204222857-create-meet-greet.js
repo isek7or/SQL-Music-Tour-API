@@ -11,13 +11,11 @@ module.exports = {
       },
       event_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       },
       band_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       },
       meet_start_time: {
         type: Sequelize.DATE,
@@ -27,9 +25,9 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       }
-    });
+    })
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('meet_Greets');
   }
-};
+}

@@ -11,23 +11,23 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: false
       },
       genre: {
         type: Sequelize.TEXT,
-        allowNull: false,
+        allowNull: false
       },
       available_start_time: {
         type: Sequelize.DATE,
-        allowNull: false,
+        allowNull: false
       },
       end_time: {
         type: Sequelize.DATE,
-        allowNull: false,
-      },
-    });
+        allowNull: false
+      }
+    })
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('bands');
   }
-};
+}

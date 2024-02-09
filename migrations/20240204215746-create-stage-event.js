@@ -11,17 +11,15 @@ module.exports = {
       },
       stage_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       },
       event_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        foreignKey: true,
+        allowNull: false
       }
-    });
+    })
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('stage_Events');
   }
-};
+}

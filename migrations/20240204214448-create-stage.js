@@ -11,11 +11,11 @@ module.exports = {
       },
       stage_name: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: false
       }
-    });
+    })
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('stages');
   }
-};
+}
