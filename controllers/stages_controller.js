@@ -34,7 +34,7 @@ stages.get('/:name', async (req, res) => {
         })
         res.status(200).json(foundStage)
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(err)
     }
 })
 
