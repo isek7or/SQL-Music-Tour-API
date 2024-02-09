@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       Meet_Greet.belongsTo(Band, {
         foreignKey: 'band_id',
         as: 'band'
-      });
+      })
       // event
       Meet_Greet.belongsTo(Event, {
         foreignKey: 'event_id',
@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    meet_start_tine: {
+    meet_start_time: {
       type: DataTypes.DATE,
       allowNull: false
     },

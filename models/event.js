@@ -10,12 +10,12 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'event_id',
         as: 'stages',
         through: Stage_Event
-      });
+      })
       // meet and greet
       Event.hasMany(Meet_Greet, {
         foreignKey: 'event_id',
         as: 'meet_greets'
-      });
+      })
       // set times
       Event.hasMany(Set_Time, {
         foreignKey: 'event_id',
