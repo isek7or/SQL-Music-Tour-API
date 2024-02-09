@@ -52,7 +52,7 @@ bands.get('/:name', async (req, res) => {
             ]
         })
         res.status(200).json(foundBand)
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err)
     }
 })
